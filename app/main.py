@@ -17,13 +17,17 @@ class Animal:
 
 
 class Herbivore(Animal):
-    def hide(self) -> None:
+    def hide(
+            self
+    ) -> None:
         self.hidden = not self.hidden
 
 
 class Carnivore(Animal):
-    def bite(self,
-             prey: Herbivore) -> None:
+    def bite(
+            self,
+             prey: Herbivore
+    ) -> None:
         if not isinstance(prey, Herbivore):
             return
         if prey.hidden:
