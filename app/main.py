@@ -26,7 +26,7 @@ class Herbivore(Animal):
 class Carnivore(Animal):
     def bite(
             self,
-             prey: Herbivore
+            prey: Herbivore
     ) -> None:
         if not isinstance(prey, Herbivore):
             return
