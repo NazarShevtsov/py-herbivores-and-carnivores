@@ -33,6 +33,5 @@ class Carnivore(Animal):
         if prey.hidden:
             return
         prey.health -= 50
-        if prey.health <= 0:
-            if prey in Animal.alive:
-                Animal.alive.remove(prey)
+        if prey.health <= 0 and prey in Animal.alive:
+            Animal.alive.remove(prey)
